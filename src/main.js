@@ -12,4 +12,6 @@ import "../styles/utils.css";
 
 // JS
 import mobileNav from "./utils/mobile-nav";
+import darkMode from "./utils/dark-theme";
 mobileNav();
+darkMode();

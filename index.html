@@ -8,7 +8,7 @@
       href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
       rel="stylesheet"
     />
-    <title>Dev Server</title>
+    <title>Portfolio</title>
   </head>
   <body>
     <header class="header container">
@@ -18,14 +18,14 @@
             <a class="header__link" href="#about">About</a>
           </li>
           <li>
-            <a class="header__link" href="#featured">Work</a>
+            <a class="header__link" href="#featured">Featured Work</a>
           </li>
           <li>
             <a class="header__link" href="#contact">Contact</a>
           </li>
           <li class="header__line"></li>
           <li>
-            <button class="header__sun">
+            <button id="them-toggle" class="header__sun">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -56,6 +56,40 @@
         </button>
       </nav>
     </header>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#featured">Featured work</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">Contact</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button id="them-toggle" class="mobile-nav__sun">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="mobile-nav__btn btn" href="#">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- End of Mobile Navigation -->
     <section class="hero container">
       <img class="hero__img" src="./profile.jpg" alt="" />
       <h2 class="hero__subtitle">Hi, I'm Anukul 👋</h2>
@@ -71,7 +105,7 @@
       </p>
       <a class="hero__btn btn" href="#">Reach out</a>
     </section>
-    <section class="about container section">
+    <section id="about" class="about container section">
       <div class="about__content">
         <h2 class="about__title">About</h2>
         <p class="about__description">
@@ -112,7 +146,7 @@
         />
       </div>
     </section>
-    <section class="featured container section">
+    <section id="featured" class="featured container section">
       <h3 class="featured__subtitle">Featured Projects</h3>
       <div class="featured__title-link-wrapper">
         <h2 class="featured__title">Anukul Tripathi</h2>
@@ -259,7 +293,7 @@
         </div>
       </div>
     </section>
-    <section class="contact section container">
+    <section id="contact" class="contact section container">
       <h2 class="contact__title">Get In Contact</h2>
       <p class="contact__description">
         Whether you are starting a project, have business inquiries or just want

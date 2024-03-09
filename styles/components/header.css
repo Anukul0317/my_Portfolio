@@ -3,6 +3,8 @@
   justify-content: flex-end;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  position: relative;
+  z-index: 101;
 }
 .header__menu {
   display: none;
